@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo2.png">
+  <title>Market-Place Viveros</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/products.js"></script>
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header>
+
+
+  <div class="header-2">
+
+    <div class="nav__logo">
+      <figure >
+        <a href="./index.html"><img src="img/logo2.png" alt=""></a>
+      </figure>
+      <h1 class="logo__title">Market Place Viveros</h1>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="Buscar...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+  </div>
+
+  <div class="header-3">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li class="categories"><a href="./categories.html">Categorias</a>
+          <ul>
+            <li><a href="#">Cactáceas</a></li>
+            <li><a href="#">Bonsai</a></li>
+            <li><a href="#">Fertilizantes</a></li>
+            <li><a href="#">Materas</a></li>
+            <li><a href="#">Plantas de flor</a></li>
+            <li><a href="#">Plantas de Follaje</a></li>
+            <li><a href="#">Productos de Jardinería</a></li>
+            <li><a href="#">Semillas</a></li>
+            <li><a href="#">Suculentas</a></li>
+          </ul>
+        </li>
+        <li><a href="#product">Ofertas</a></li>
+        <li><a href="#contact">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <div class="icons">
+      <ul>
+        <li class="submenu">
+          <a href="./register.html">Registrarse</a>
+          <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+          <div id="carrito">
+            <table id="lista-carrito" class="u-full-width">
+              <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <a href="#" id="vaciar-carrito" class="btn btn__cart">Vaciar Carrito</a>
+            <a href="#" id="procesar-compra" class="btn btn__cart">Procesar Compra</a>
+          </div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="./login.html" class="fas fa-user-circle"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+  <div class="swiper-container home-slider">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="box" style="background: url(img/slider3.jpg);">
+          <div class="content">
+            <span>hasta 75% off</span>
+            <h3>oferta especial</h3>
+            <a href="#" class="btn">comprar ahora!</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box" style="background: url(img/slider2.jpg);">
+          <div class="content">
+            <span>hasta 45% off</span>
+            <h3>decora tu hogar</h3>
+            <a href="#" class="btn">comprar ahora!</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box" style="background: url(img/slider1.jpg);">
+          <div class="content">
+            <span>hasta 65% off</span>
+            <h3>las plantas hacen personas felices</h3>
+            <a href="#" class="btn">Comprar ahora!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+  <div class="banner">
+    <img src="img/banner1.jpg" alt="">
+    <div class="content">
+      <span>recien llegados</span>
+      <h3>para el hogar</h3>
+      <a href="#" class="btn">comprar ahora!</a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="img/banner2.jpg" alt="">
+    <div class="content">
+      <span>recien llegados</span>
+      <h3>Para la oficina</h3>
+      <a href="#" class="btn">comprar ahora!</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+  <h1 class="heading"> compra por categoria </h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <img src="img/cat1.jpg" alt="">
+      <div class="content">
+        <h3>bonsai</h3>
+        <a href="#" class="btn">comprar ahora</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="img/cat2.jpg" alt="">
+      <div class="content">
+        <h3>para el hogar</h3>
+        <a href="#" class="btn">comprar ahora</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="img/cat3.jpg" alt="">
+      <div class="content">
+        <h3>para la oficina</h3>
+        <a href="#" class="btn">comprar ahora</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="img/cat4.jpg" alt="">
+      <div class="content">
+        <h3>para regalar</h3>
+        <a href="#" class="btn">comprar ahora</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- product section starts  -->
+
+<section class="product" id="product">
+
+  <h1 class="heading"> Productos nuevos </h1>
+
+  <div class="box-container" id="lista-productos">
+
+    <div id="cardBox"></div>
+
+  </div>
+
+</section>
+
+<!-- product section ends -->
+
+<!-- .icons section starts  -->
+
+<section class="icons-container">
+
+  <div class="icon">
+    <img src="img/icon1.png" alt="">
+    <div class="content">
+      <h3>Envio gratis</h3>
+      <p>Envios nacionales</p>
+    </div>
+  </div>
+  <div class="icon">
+    <img src="img/icon2.png" alt="">
+    <div class="content">
+      <h3>reembolso 100%</h3>
+      <p>tendras tu dinero en 30 dias</p>
+    </div>
+  </div>
+  <div class="icon">
+    <img src="img/icon3.png" alt="">
+    <div class="content">
+      <h3>pagos seguros</h3>
+      <p>seguridad al 100%</p>
+    </div>
+  </div>
+  <div class="icon">
+    <img src="img/icon4.png" alt="">
+    <div class="content">
+      <h3>Soporte 24/7</h3>
+      <p>Contactanos a cualquier hora</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- .icons section ends -->
+
+
+<section class="contact" id="contact">
+
+  <h1 class="heading">Encuentranos!</h1>
+
+  <div class="row">
+
+    <iframe class="map" src="https://maps.google.com/maps?q=bogota-kennedy&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    <form action="">
+
+      <div class="inputBox">
+        <input type="text" required>
+        <label>Nombre</label>
+      </div>
+      <div class="inputBox">
+        <input type="email" required>
+        <label>correo</label>
+      </div>
+      <div class="inputBox">
+        <input type="number" required>
+        <label>telefono</label>
+      </div>
+      <div class="inputBox">
+        <textarea required name="" id="" cols="30" rows="10"></textarea>
+        <label>mensaje</label>
+      </div>
+
+      <input type="submit" value="enviar" class="btn">
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+    <div class="box">
+      <h3>sobre nosotros</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero autem nemo amet recusandae eveniet?</p>
+    </div>
+    <div class="box">
+      <h3>sucursales</h3>
+      <a href="#">bogota</a>
+      <a href="#">popayan</a>
+      <a href="#">medellin</a>
+      <a href="#">santander</a>
+    </div>
+    <div class="box">
+      <h3>Links</h3>
+      <a href="#">home</a>
+      <a href="#">category</a>
+      <a href="#">product</a>
+      <a href="#">deal</a>
+      <a href="#">contact</a>
+    </div>
+    <div class="box">
+      <h3>siguenos</h3>
+      <a href="#">facebook</a>
+      <a href="#">twitter</a>
+      <a href="#">instagram</a>
+      <a href="#">linked</a>
+    </div>
+
+  </div>
+
+  <h1 class="credit"> creado por el <span> SENA con <3 </span> | todos los derechos reservados! </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- scroll top button  -->
+<a href="#home" class="scroll-top fas fa-angle-up"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/cart.js"></script>
+
+<!-- custom js file link  -->
+
+</body>
+</html>

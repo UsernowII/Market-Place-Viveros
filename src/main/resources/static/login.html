@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/db572daf1c.js"
+          crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="../public/img/logo2.png">
+  <title>Market-Place Viveros</title>
+</head>
+
+  <body>
+    <header>
+
+
+    <div class="header-2">
+
+      <div class="nav__logo">
+        <figure >
+          <a href="./index.html"><img src="img/logo2.png" alt=""></a>
+        </figure>
+        <h1 class="logo__title">Market Place Viveros</h1>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Buscar...">
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+    </div>
+
+    <div class="header-3">
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li class="categories"><a href="./categories.html">Categorias</a>
+            <ul>
+              <li><a href="#">Cactáceas</a></li>
+              <li><a href="#">Bonsai</a></li>
+              <li><a href="#">Fertilizantes</a></li>
+              <li><a href="#">Materas</a></li>
+              <li><a href="#">Plantas de flor</a></li>
+              <li><a href="#">Plantas de Follaje</a></li>
+              <li><a href="#">Productos de Jardinería</a></li>
+              <li><a href="#">Semillas</a></li>
+              <li><a href="#">Suculentas</a></li>
+            </ul>
+          </li>
+          <li><a href="#product">Ofertas</a></li>
+          <li><a href="#contact">Contactanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <ul>
+          <a href="./register.html">Registrarse</a>
+          <a href="./car.html" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="./login.html" class="fas fa-user-circle"></a>
+        </ul>
+      </div>
+
+    </div>
+
+    </header>
+
+    <main>
+      <div class="login__container">
+
+        <h2 class="login__title">Iniciar Sesión</h2>
+
+        <div class="login__input">
+          <input type="email" placeholder="Correo Electrónico" id="txtEmail">
+        </div>
+        <div class="login__input">
+          <input type="password" placeholder="Contraseña" id="txtPassword">
+        </div>
+        <h4 class="login__subtitle">¿No tiene cuenta?<a href="./register.html">click aquí</a></h4>
+        <a onclick="login()" class="login__cta" href="#">Continuar</a>
+      </div>
+    </main>
+
+    <script src="js/login.js"></script>
+
+  </body>
+</html>
