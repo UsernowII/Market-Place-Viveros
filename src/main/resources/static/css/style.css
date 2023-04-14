@@ -865,6 +865,10 @@ th {
     background-color: #2d572c;
 }
 
+.user input {
+    text-transform: none;
+}
+
 /* new styles login */
 main {
     width: 90%;

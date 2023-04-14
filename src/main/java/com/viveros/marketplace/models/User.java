@@ -33,5 +33,8 @@ public class User {
     @Getter @Setter @Column(name = "user_password")
     private String password;
 
+    @Getter @Setter
+    private String repeatPassword;
+
 }
 

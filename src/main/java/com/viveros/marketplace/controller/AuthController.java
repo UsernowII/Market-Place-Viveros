@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Objects;
+
 @RestController
 @RequestMapping("/api")
 public class AuthController {
@@ -26,11 +28,15 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody User user){
+        if(!Objects.equals(user.getPassword(), user.getRepeatPassword())) {
+            return new ResponseEntity<>("Las contraseñas no son iguales", HttpStatus.BAD_REQUEST);
+        }
+
         Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
         String hash = argon2.hash(2, 1024, 2, user.getPassword());
         user.setPassword(hash);
         userService.create(user);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>("Registrado Exitosamente", HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
