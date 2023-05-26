@@ -1,7 +1,7 @@
 async function register(){
 
     let datos = {};
-    datos.name =  document.getElementById("txtName").value;
+    datos.userName =  document.getElementById("txtName").value;
     datos.lastName =  document.getElementById("txtLastName").value;
     datos.phone =  document.getElementById("txtPhone").value;
     datos.email =  document.getElementById("txtEmail").value;
