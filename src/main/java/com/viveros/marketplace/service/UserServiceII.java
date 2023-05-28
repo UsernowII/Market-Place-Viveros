@@ -1,7 +1,7 @@
 package com.viveros.marketplace.service;
 
 import com.viveros.marketplace.models.Auth;
-import com.viveros.marketplace.models.User;
+import com.viveros.marketplace.user.entities.User;
 import com.viveros.marketplace.repository.IUserRepository;
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;
@@ -14,7 +14,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class UserService implements IUserRepository {
+public class UserServiceII implements IUserRepository {
 
     @PersistenceContext
     EntityManager entityManager;

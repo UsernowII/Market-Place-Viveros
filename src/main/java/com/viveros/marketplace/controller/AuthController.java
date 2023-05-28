@@ -1,8 +1,8 @@
 package com.viveros.marketplace.controller;
 
 import com.viveros.marketplace.models.Auth;
-import com.viveros.marketplace.models.User;
-import com.viveros.marketplace.service.UserService;
+import com.viveros.marketplace.user.entities.User;
+import com.viveros.marketplace.service.UserServiceII;
 import com.viveros.marketplace.util.JWTUtil;
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;
@@ -21,7 +21,7 @@ import java.util.Objects;
 public class AuthController {
 
     @Autowired
-    private UserService userService;
+    private UserServiceII userService;
 
     @Autowired
     private JWTUtil jwtUtil;
