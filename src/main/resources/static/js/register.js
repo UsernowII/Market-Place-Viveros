@@ -15,7 +15,8 @@ async function register(){
         return;
     }
 
-    const request = await fetch("/api/register", {
+    datos.repeatPassword = repeatPassword;
+    const request = await fetch("api/register", {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -23,7 +24,6 @@ async function register(){
         },
         body : JSON.stringify(datos)
     })
-
 
 
     alert("Cuenta Creada exitosamente");

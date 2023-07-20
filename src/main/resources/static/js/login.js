@@ -1,5 +1,4 @@
 async function login() {
-    console.log("login");
     let datos = {};
     datos.email = document.querySelector('#txtEmail').value;
     datos.password = document.querySelector('#txtPassword').value;

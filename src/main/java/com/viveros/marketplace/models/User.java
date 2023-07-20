@@ -16,7 +16,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Getter @Setter @Column(name = "user_id")
+    @Getter @Setter @Column(name = "id")
     private long id;
 
     @Getter @Setter @Column(name = "user_name")
@@ -24,13 +24,13 @@ public class User {
 
     @Getter @Setter @Column(name = "last_name")
     private String lastName;
-    @Getter @Setter @Column(name = "user_email")
+    @Getter @Setter @Column(name = "email")
     private String email;
 
-    @Getter @Setter @Column(name = "user_phone")
+    @Getter @Setter @Column(name = "phone")
     private String phone;
 
-    @Getter @Setter @Column(name = "user_password")
+    @Getter @Setter @Column(name = "password")
     private String password;
 
     @Getter @Setter
