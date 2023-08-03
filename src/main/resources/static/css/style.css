@@ -896,6 +896,10 @@ main {
     font-size: 1.5rem;
 }
 
+.login__input > input {
+    text-transform: none;
+}
+
 .login__cta {
     display: inline-block;
     background-color: #48c244;
